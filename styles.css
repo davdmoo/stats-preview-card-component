@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets/fonts/Inter.ttf);
+  font-style: normal;
+  font-family: "LexendDeca";
+  src: url(./assets/fonts/LexendDeca.ttf);
+  font-style: normal;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(233, 47%, 7%);
+}
+
+h1 {
+  font-weight: 700;
+  font-family: "Inter";
+  color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  font-weight: 700;
+  font-family: "Inter";
+  color: hsl(0, 0%, 100%);
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Inter";
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 24px;
+}
+
+.header-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+main {
+  text-align: center;
+  margin: 48px 16px 48px 16px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.stats-preview {
+  padding: 16px 24px 16px 24px;
+}
+
+.stats-container {
+  margin-bottom: 16px;
+}
+
+.preview {
+  margin-bottom: 32px;
+}
+
+.stats {
+  margin-top: 16px;
+}
+
+.stats h2 {
+  margin: 4px;
+}
+.stats p {
+  margin: 0px;
+  font-family: "LexendDeca";
+}
+
+footer {
+  position: absolute;
+  bottom: 8px;
+  font-size: 11px;
+  text-align: center;
+  font-family: "LexendDeca";
+  color: hsl(0, 0%, 100%);
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 16px;
+  }
+
+  .header-image {
+    max-width: 40%;
+    object-fit: cover;
+  }
+
+  .stats {
+    margin-top: 0px;
+    margin-right: 32px;
+  }
+
+  .stats-preview {
+    max-width: 60%;
+    display: inline-block;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+  }
+
+  .stats-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+  }
+}
