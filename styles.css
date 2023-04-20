@@ -43,6 +43,8 @@ p {
 .header-image {
   object-fit: cover;
   width: 100%;
+  filter: invert(15%) sepia(70%) saturate(400%) hue-rotate(230deg)
+    brightness(57%) contrast(100%);
 }
 
 main {
